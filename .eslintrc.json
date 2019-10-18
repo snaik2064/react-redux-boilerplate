@@ -1,0 +1,80 @@
+{
+  "extends": [
+    "react-app",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "jasmine": true,
+    "jest": true
+  },
+  "rules": {
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "indent": [
+      "error",
+      2
+    ], // A custom style-related rule for example
+    "no-multiple-empty-lines": [
+      2,
+      {
+        "max": 1,
+        "maxEOF": 0,
+        "maxBOF": 0
+      }
+    ],
+    "prefer-const": 1,
+    "react/prop-types": [
+      1
+    ],
+    "react/no-array-index-key": [
+      1
+    ],
+    "no-undef": [
+      1
+    ],
+    "no-case-declarations": [
+      1
+    ],
+    "no-return-assign": [
+      1
+    ],
+    "no-param-reassign": [
+      1
+    ],
+    "no-shadow": [
+      1
+    ],
+    "camelcase": [
+      1
+    ],
+    "no-underscore-dangle": [
+      0,
+      "always"
+    ],
+    "no-console": [
+      1
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ]
+    // More custom rules here
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "parser": "babel-eslint"
+}

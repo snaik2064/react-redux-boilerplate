@@ -5,7 +5,8 @@
     "plugin:react/recommended"
   ],
   "plugins": [
-    "react"
+    "react",
+    "prettier"
   ],
   "env": {
     "browser": true,
@@ -20,10 +21,6 @@
         "avoidEscape": true
       }
     ],
-    "indent": [
-      "error",
-      2
-    ], // A custom style-related rule for example
     "no-multiple-empty-lines": [
       2,
       {
@@ -54,9 +51,6 @@
     "no-shadow": [
       1
     ],
-    "camelcase": [
-      1
-    ],
     "no-underscore-dangle": [
       0,
       "always"
@@ -67,7 +61,13 @@
     "comma-dangle": [
       "error",
       "never"
-    ]
+    ],
+    "no-unused-vars": "error",
+    "object-curly-spacing": [
+      2,
+      "always"
+    ],
+    "prettier/prettier": "error"
     // More custom rules here
   },
   "settings": {
